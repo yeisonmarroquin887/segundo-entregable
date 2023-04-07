@@ -10,7 +10,7 @@ const Loading = () => {
       <h1><b>🌥️Loading🌤️</b></h1>
       </nav>
       <nav className='card'>
-      <h2>Gracias por ingresar a mi pagina, Bienvedino Seas... <br/>"🙌🌅🌄🌉🏞️⛈️🌩️🙌"</h2>
+      <h2>Gracias por ingresar a mi pagina, Bienvenido Seas... <br/>"🙌🌅🌄🌉🏞️⛈️🌩️🙌"</h2>
       </nav>
      
     </div>
