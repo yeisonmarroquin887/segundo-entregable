@@ -8,6 +8,11 @@
     display: grid;
    height: 41rem;
 }
+a{
+    color: rgb(140, 36, 36);
+    text-decoration: none;
+    cursor: pointer;
+}
 @media(min-width: 700px){
     .App{
     
