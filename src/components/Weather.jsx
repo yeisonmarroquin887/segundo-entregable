@@ -1,15 +1,27 @@
 import React, { useState } from 'react'
 import "./weather.css"
-const Weather = ( {app, temperature} ) => {
-    console.log(app)
+
+
+const Weather = ( {app, temperature, a, clickbutton} ) => {
+
     const [change, setchange] = useState(true)
 const handelChangeTemperature = () => setchange(!change)
+
+const handelsearch = e => {
+    e.preventDefault()
+  a(e.target.namecity.value)
+  }
+
+
 
   return (
     <article className='fhather'>
         <section className="app">
-        <h1>Weather App</h1>
+            <nav className='tittle'>
+            <h1>Weather App</h1>
         <h3><span>feels_like:</span> <b>{app?.main.feels_like}</b></h3>
+            </nav>
+
         <section>
             <img src={`https://openweathermap.org/img/wn/${app.weather[0].icon}@4x.png`} alt="" />
         </section>
@@ -20,7 +32,7 @@ const handelChangeTemperature = () => setchange(!change)
         <section className='num'>
             <h4><span>Clouds...</span> <br />{app?.weather[0].description}</h4> 
             </section>
-
+        
         <section className='temp'>
             <nav className='tempe'>
             {   
@@ -36,11 +48,10 @@ const handelChangeTemperature = () => setchange(!change)
             </section>
 
         
-        <section className='inf_ini'>
-        </section>
-        <section className='inf'>
         
-            <section className='m'>
+        <section className='info'>
+        
+            <section className='inf'>
             <nav>
                 <ul>
                     <li><span>Wind Speed</span> <b>{app?.wind.speed} m/s</b></li>
@@ -61,14 +72,20 @@ const handelChangeTemperature = () => setchange(!change)
             </nav>
             </section>
         </section>
-      
+       
+               <div className= "bus">
+            <form onSubmit={handelsearch}>
+            <input id='namecity' type="texto" required placeholder="Search" onclick='clearInput()' />
+                  
+                   
+                   <button className='button' onClick={clickbutton}>Search</button>
+               </form>
+            </div>
+        
+    
+           
         </section>
-        <div className= "bus">
-        <from>
-            <input type="texto" />
-        <button>Search</button>
-        </from>
-        </div>
+     
     </article>
   )
 }
