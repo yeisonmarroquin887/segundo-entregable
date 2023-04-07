@@ -69,7 +69,7 @@ useEffect(()=>{
            : <Loading/>
       }
      <div>
-      <a href="">repositorio</a>
+      <a href="https://github.com/yeisonmarroquin887/segundo-entregable.git">repositorio</a>
      </div>
     </div>
   )
