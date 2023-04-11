@@ -76,13 +76,32 @@ input{
    writing-mode: horizontal-tb !important;
 }
 .button{
-    box-shadow:    inset 0 -100em 3em hsla(350, 95%, 49%, 0.708),     0 0  0 0px rgba(255, 255, 255, 0.356),     0.3em 0.3em 1em rgba(190, 186, 186, 0.445);
+    box-shadow:    inset 0 -100em 3em hsla(231, 95%, 49%, 0.708),     0 0  0 0px rgba(255, 255, 255, 0.356),     0.3em 0.3em 1em rgba(190, 186, 186, 0.445);
     height: 1.5rem;
     width: 4rem;
     border-style: none;
     border-radius: 1rem;
     cursor: pointer;
     
+}
+.button:hover{
+    box-shadow:    inset 0 -100em 3em hsla(350, 97%, 49%, 0.663),     0 0  0 0px rgba(255, 255, 255, 0.356),     0.3em 0.3em 1em rgba(190, 186, 186, 0.445);
+    color: aliceblue;
+}
+#temp{
+    box-shadow:    inset 0 -100em 3em hsla(250, 97%, 47%, 0.753),     0 0  0 0px rgba(255, 255, 255, 0.356),     0.3em 0.3em 1em rgba(190, 186, 186, 0.445);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-style: none;
+    height: 1.2rem;
+    width: 5.5rem;
+}
+#temp:hover{
+    box-shadow:    inset 0 -100em 3em hsla(350, 95%, 49%, 0.708),     0 0  0 0px rgba(255, 255, 255, 0.356),     0.3em 0.3em 1em rgba(190, 186, 186, 0.445);
+    color: aliceblue;
 }
 
 @media(min-width: 700px){
@@ -143,11 +162,28 @@ input{
            writing-mode: horizontal-tb !important;
         }
         .button{
-            box-shadow:    inset 0 -100em 3em hsla(224, 97%, 49%, 0.663),     0 0  0 0px rgba(255, 255, 255, 0.356),     0.3em 0.3em 1em rgba(190, 186, 186, 0.445);
+            box-shadow:    inset 0 -100em 3em hsla(352, 87%, 47%, 0.663),     0 0  0 0px rgba(255, 255, 255, 0.356),     0.3em 0.3em 1em rgba(190, 186, 186, 0.445);
             height: 2rem;
             width: 4rem;
             border-style: none;
             border-radius: 1rem;
             cursor: pointer;
+        }
+        .button:hover{
+            box-shadow:    inset 0 -100em 3em hsla(224, 97%, 49%, 0.663),     0 0  0 0px rgba(255, 255, 255, 0.356),     0.3em 0.3em 1em rgba(190, 186, 186, 0.445);
+        }
+        #temp{
+            box-shadow:    inset 0 -100em 3em hsla(352, 96%, 47%, 0.708),     0 0  0 0px rgba(255, 255, 255, 0.356),     0.3em 0.3em 1em rgba(190, 186, 186, 0.445);
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-style: none;
+            height: 1.2rem;
+            width: 5.5rem;
+        }
+        #temp:hover{
+            box-shadow:    inset 0 -100em 3em hsla(229, 95%, 49%, 0.708),     0 0  0 0px rgba(255, 255, 255, 0.356),     0.3em 0.3em 1em rgba(190, 186, 186, 0.445);
         }
 }
