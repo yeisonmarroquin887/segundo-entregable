@@ -4,13 +4,12 @@
 .lo{
     
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    position: fixed;
     background-size: cover;
     background-position: center;
     text-align: center;
     display: grid;
-   border-style: dotted;
-   color: blueviolet;
 }
 .car{
     padding-top: 7rem;

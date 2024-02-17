@@ -1,27 +1,27 @@
 .App{
-    
+    display: flex;
+
     width: 100%;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
     text-align: center;
     display: grid;
-   height: 41rem;
+   position: fixed;
 }
 a{
     color: rgb(140, 36, 36);
     text-decoration: none;
     cursor: pointer;
 }
-@media(min-width: 700px){
+@media(min-width: 800px){
     .App{
-    
+        align-items: start;
         width: 100%;
         min-height: 100vh;
         background-size: cover;
         background-position: center;
         text-align: center;
-        display: grid;
        height: 45rem;
     }
 }
